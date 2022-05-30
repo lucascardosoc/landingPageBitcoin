@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*criando a class header*/
+.header {
+  background-color: #000;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 35px;
+}
+
+.header__title__link{
+  text-decoration: none;
+}
+
+.icone {
+  font-size: 50px;
+  color: #ED145E;
+}
+
+/*classe container - genérica quando  for montar um container chamaremos essa classe*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__fundo {
+  background-color: #000;
+}
+
+
+.container__fundo__imagem1 {
+  background-image: url(/img/bitcoin5.jpg);
+}
+
+.container__fundo__imagem2 {
+  background-image: url(/img/nasa.jpg);
+}
+
+.container__title {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.container__text {
+  color: #fff;
+  width: 50%;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  border: 1px solid #ED145E;
+  padding: 15px 60px;
+  background-color: #ED145E;
+  border-radius: 70px;
+}
+
+.container__link:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+/*Rodapé*/
+
+.rodape{
+  width: 100%;
+  float: left;
+  background-color: #000;
+  padding: 20px 8%;
+}
+
+.rodape_nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.rodape_nav a {
+  text-decoration: none;
+  color: #d3d3d3;
+  font-size: 25px;
+}
+
+.rodape_nav a:hover {
+  color: #ED145E;
+}
+
+form, fieldset{
+  color: white;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  padding-bottom: 7px;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+  background: #dc143c;
+  color: #fff;
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 1rem;
+  clip-path: circle();
+
+  font-size: 1rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
